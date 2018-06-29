@@ -17,3 +17,16 @@ bin/
 
 # Pycharm IDE
 .idea/
+
+
+tools/REAPER/
+tools/festival/
+tools/festvox/
+tools/magphase/
+tools/postfilter/
+tools/speech_tools/
+
+
+
+
+
