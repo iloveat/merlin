@@ -62,7 +62,7 @@ fi
 
 if [[ ! -f ${data_dir}.zip ]]; then
     echo "downloading data....."
-    rm -f ${data_dir}.zip
+    # rm -f ${data_dir}.zip
     if hash curl 2>/dev/null; then
         curl -L -O $data_url
     elif hash wget 2>/dev/null; then

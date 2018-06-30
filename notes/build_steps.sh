@@ -38,6 +38,21 @@ pip install h5py==2.7.0
 pip install tensorflow==1.8.0
 
 
+# 6. run example
+cd egs/slt_arctic/s1/
+source activate merlin-py27
+# prepare data for training
+./01_setup.sh slt_arctic_full
+# prepare config files for training and testing
+./02_prepare_conf_files.sh conf/global_settings.cfg
+# train duration model
+./03_train_duration_model.sh conf/duration_slt_arctic_full.conf 
+# train acoustic model
+./04_train_acoustic_model.sh conf/acoustic_slt_arctic_full.conf
+
+
+
+
 
 
 
